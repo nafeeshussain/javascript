@@ -32,7 +32,7 @@ function add(a, b){
     document.getElementById("aa").innerHTML = z;
 } */
 
-function getTen() {
+/* function getTen() {
     let x = 10;
     let y = 11;
     let z = x + y;
@@ -65,3 +65,24 @@ alert(calc(12,11,'d'));
 
 
 
+const person = {firstName: "Imtiaz", model:2014};
+
+console.log(person.firstName);
+console.log(person['model']); */
+
+
+const person = {
+    firstName: "Imtiaz",
+    lastName: "Ahmed",
+    id: 894348,
+    fullName: function(){
+        return this.firstName+" "+this.lastName;
+    },
+    getID: function(){
+        return this.id;
+    }
+}
+
+let x = "";
+let y = false;
+let z = 0;

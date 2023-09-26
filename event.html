@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Envent</title>
+</head>
+<body>
+    
+    <h1 onmouseover="changeColor()" onmouseout="defaultColor()" id="heading">Click me!</h1>
+    <h1 >Click me!</h1>
+
+    <input type="text" onfocus="changeColor()" onchange="typeText(this.value)" />
+
+    <button type="button" onclick="changeColor()">Click Me!</button>
+
+
+    <button onclick="document.getElementById('heading').innerHTML = Date()">Get TIme</button>
+    
+    <button onclick="this.innerHTML = Date()">Get Time OWN</button>
+    <button onclick="displayDate()" id="display">Display Date</button>
+
+
+
+    <script src="event.js"></script>
+</body>
+</html>
