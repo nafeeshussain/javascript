@@ -18,7 +18,7 @@ function typeText(text) {
 }
 
 
-const cars = ['bmw', 'volvo', 'honda', 'kia'];
+/* const cars = ['bmw', 'volvo', 'honda', 'kia'];
 
 cars.map(c => {
     if (c == 'honda') {
@@ -29,5 +29,24 @@ cars.map(c => {
         let n = `bad cars ${c} <br>`;
         document.getElementById('old').innerHTML += n;
     }
-});
+}); */
+
+
+let name = 'Imtiaz"s';
+let name2 = "IMtiaz's";
+let arr = ["Imtiaz","Imtiaz"]
+
+
+//alert(arr.length);
+
+let text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+let length = text.length;
+//alert(length);
+
+let etext = "We are the so-called \"Vikings\" from the north.";
+
+let text2 = "The character \n is called backslash.";
+document.getElementById("demo").innerHTML = text2;
+//alert(text2);
+
 
