@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>String</title>
 </head>
-<body>
-    
 
+<body>
+
+    <h2 id="demo">Hello World</h2>
+
+    <div id="data"></div>
 
     <script>
         //let text = "Apple, Banana, Kiwi";
@@ -18,13 +22,13 @@
         //let textDup = text.slice(-12); //Banana, Kiwi
         //let textDup = text.slice(-12, -6); //Banana
         //let textDup = text.slice(7, -6); //Banana
-        
+
         //substring method
-        
+
         //let textDup = text.substring(7,-1); //Apply,
         //let textDup = text.substring(7,2); //ply,
         //let textDup = text.substring(7); //Banana, Kiwi
-        
+
         //substr method
         //let textDup = text.substr(7,6); //Banana
         //let textDup = text.substr(7,10); //Banana, Ki
@@ -33,45 +37,45 @@
 
         //replace method
         //let textDup = text.replace("Kiwi","Mango");
-        
+
         //let text = "Please visit Microsoft and Microsoft!";
         //let textDup = text.replace("Microsoft", "W3Schools"); //Please visit W3Schools and Microsoft!
 
         //let text = "Please visit Microsoft!";
         //let textDup = text.replace("MICROSOFT", "W3Schools"); //Please visit Microsoft! false
-        
+
         //  /i flag (insensitive)
         //let text = "Please visit Microsoft!";
         //let textDup = text.replace(/MICROSOFT/i, "W3Schools"); //Please visit W3Schools! true 
-        
+
         //let text = "Please visit MICROSOFT!";
         //let textDup = text.replace(/Microsoft/i, "W3Schools"); //Please visit W3Schools! true
-        
+
         // /g flag Global match
         //let text = "Please visit Microsoft and Microsoft!";
         //let textDup = text.replace(/Microsoft/g, "W3Schools"); //Please visit W3Schools and W3Schools!
-        
-        
+
+
         // replaceALL
         //let text = "Please visit Microsoft and Microsoft!";
         //let textDup = text.replaceAll(/Microsoft/g,"Google");
-        
-        
+
+
         //toUpperCase()
         //let text = "Please visit Microsoft and Microsoft!";
         //let textDup = text.toUpperCase();
-        
-        
+
+
         //toLowerCase();
         //let text = "Please visit Microsoft and Microsoft!";
         //let textDup = text.toLowerCase();
-        
+
         //concat
         //let text1 = "Hello";
         //let text2 = "World!";
         //let textDup = text1.concat("-",text2); example 1
         //let textDup = text1 + " " + text2; //example 2
-        
+
         //trim()
         //let text = "                Imtiaz Baloch                   ";
         //let textDup = text.trim(); //both side
@@ -86,38 +90,38 @@
         //let numb = 5;
         //let text = numb.toString();
         //let textDup = text.padStart(4,"0");
-        
+
 
 
         //let text = "HELLO WORLD!";
         //let textDup = text.charAt(0);
-        
+
         //let text = "HELLO WORLD!";
         //let textDup = text.charCodeAt(0); //72
 
         //let text = "HELLO WORLD!";
         //let textDup = text[0]+text[1]+text[2]+text[3]+text[4];
-        
+
         //let text = "HELLO WORLD!";
         //text[0] = "P";
-        
+
         //let text = "Bilal Ishaque";
         //let textDup = text.split(" ")
         //let fname = textDup[0].charAt(0);
         //let lname = textDup[1].charAt(0);
         //let shortname = fname+lname;        
-        
+
         //let text = "Apple, Banana, Kiwi";
         //let textDup = text.split(",");
         //console.log(textDup[0],textDup[1],textDup[2]);
-        
+
         //let text = "Apple, Banana, Kiwi";
         //let textDup = text.split();
-        
-        
+
+
         //let text = "Please locate where 'locate' occurs!";
         //let textDup = text.indexOf("locate");
-        
+
         /* let text = "Please locate where 'locate' occurs!";
         let textDup = text.lastIndexOf("rostom");
         if(textDup !== -1)
@@ -128,18 +132,110 @@
         else{
             console.log("false");
         } */
-        
+
         //let text = "Please where 'locate' occurs!";
         //let textDup = text.search(/rostom/);
+
+
+
+        //let text = "The rain in SPAIN stays mainly in the plain";
+        //let textDup = text.match(/ain/gi);
+
+        //console.log(textDup);
+
+        /* let obj = document.getElementById("demo");
+        obj.style.color = "red";
+        obj.style.backgroundColor = "skyblue";
+        obj.innerHTML = "Imtiaz" */
+
+        //let text = "The rain in SPAIN stays mainly in the plain";
+        //const textDup = text.matchAll(/ain/g);
+        //console.log(typeof textDup);
+        //console.log(Array.from(textDup));
+
+
+        function mycal(a, b) {
+            return a + b;
+        }
+
+        //mycal("imtiaz","baloch")
+
+
+        //let fname = "Imtiaz";
+        //let lname = "Ahmed";
+        //let template = `Welcome  ${2 + 2}`;
+        //let template = `Welcome  ${lname}, My name is ${fname} ${lname}`;
+        //console.log(template);
+
+        let header = "Programming Languages";
+        let tags = ["HTML", "CSS3", "JAVASCRIPT", "PHP", "NextJS", "Python", "Java", "GLang"];
+        let html = `<h2>${header}</h2>`;
+        html += `<ul>`;
+        for (const x of tags) {
+            html += `<li>${x}</li>`
+        }
+        html += `</ul>`;
+        //document.getElementById("data").innerHTML = html;
+
+        //let x = "10";
+        //let y = 20;
+
+        //console.log(typeof parseInt(x) + parseInt(y));
+
+        ///let x = 100 / "10";
+
+        //let x = "a"+999999999999998998799999;
+        //console.log(Number.isInteger(x));
+
+        ///let x = "12.10";
+        //document.getElementById("data").innerHTML = typeof Number(x);
+
+        const person = [
+            { firstName: "Imtiaz", lastName: "Ahmed", color: "red" },
+            { firstName: "Bilal", lastName: "Baloch", color: "blue" }
+        ]
+        console.log(typeof person);
+
+        const myFunction = () => {
+
+        }
+
+        const myArray = [];
+        myArray[0] = Date.now;
+        myArray[1] = myFunction;
+        myArray[2] = person;
+
+
+        //console.log(myArray.length);
+        //console.log(myArray.sort());
+
+        const fruits = ["Apple","Banana","Mango","Kiwi","Orange"];
+        fruits.push("Lemon");
+        let flen = fruits.length;
+        console.log("Length:",flen);
+        let text = "<ul>";
+        for(let i = 0; i < flen; i++){
+            text += `<li>${fruits[i]}</li>`;
+        }
+        text += "</ul>";
+
+        //document.getElementById("data").innerHTML = text;
         
-        
-        
-        let text = "The rain in SPAIN stays mainly in the plain";
-        let textDup = text.match(/ain/gi);
-        
-        console.log(textDup);
-    
+        let text1 = "<ul>";
             
+            fruits.forEach(myli);
+            
+            text1 += "</ul>";
+            
+            function myli(value){
+                text1 += `<li>${value}</li>`;
+            }
+            document.getElementById("data").innerHTML = text1;
+
+
+
+
     </script>
 </body>
+
 </html>
