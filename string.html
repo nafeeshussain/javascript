@@ -210,7 +210,8 @@
         //console.log(myArray.sort());
 
         const fruits = ["Apple","Banana","Mango","Kiwi","Orange"];
-        fruits.push("Lemon");
+       fruits.push("lemon","Grapes");
+        //fruits.push("Lemon");
         let flen = fruits.length;
         console.log("Length:",flen);
         let text = "<ul>";
@@ -232,7 +233,27 @@
             }
             document.getElementById("data").innerHTML = text1;
 
+            const points = [40];
+            
+            //console.log(Array.isArray(points));
+            //console.log(typeof points);
+            //console.log(points instanceof Array);
+            
+            fruits.forEach(function(value){
+                console.log("Hassam:",value);
+            });
 
+
+            setTimeout(function(){
+                console.log("Hassam::::::");
+            },5000);
+
+            setInterval(function(){
+                console.log("Hassam1");
+            },1000);
+
+
+            
 
 
     </script>
