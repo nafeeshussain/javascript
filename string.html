@@ -239,21 +239,38 @@
             //console.log(typeof points);
             //console.log(points instanceof Array);
             
-            fruits.forEach(function(value){
-                console.log("Hassam:",value);
+           
+
+
+            /* setTimeout(function(){
+                //console.log("Hassam::::::");
+                fruits.forEach(function(value){
+                //console.log("Hassam:",value);
             });
 
 
-            setTimeout(function(){
-                console.log("Hassam::::::");
-            },5000);
+            },5000); */
 
-            setInterval(function(){
-                console.log("Hassam1");
-            },1000);
+            /* setInterval(function(){
+                //console.log("Hassam1");
+            },1000); */
+
+            const animals = ["Donkey","Cat","Dog","Cow","Camal"];
+            console.log("Property: ",animals.length); // property
+
+            console.log("toString:", animals.toString());
+            console.log("join:", animals.join(" | "));
+            //console.log("pop:", animals.pop());
+            let last_ele = animals.pop();
+            console.log(last_ele);
+            console.log("array_old:", animals);
+            let length = animals.push("Hourse");
+            console.log("array_new:", animals," length:",length);
+            console.log("shift:", animals.shift());
+            length = animals.length; 
+            console.log("array_new:", animals," length:",length);
 
 
-            
 
 
     </script>
