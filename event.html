@@ -1,14 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My File!</title>
+    <title>Simple App</title>
 </head>
+
 <body>
-  
+
+    <button onclick="myFunction1()">Sort Alphabetically</button>
+    <button onclick="myFunction2()">Sort Numerically</button>
+    <br>
+    <br>
+    <div id="demo"></div>
 
 
-    <script src="index.html"></script>
+
+    <script>
+        //console.log(Math.random());
+
+        const points = [110, 30, 40, 20, 50, 70, 900];
+        document.getElementById("demo").innerHTML = points
+
+        function myFunction1() {
+            points.sort();
+            document.getElementById("demo").innerHTML = points
+        }
+
+        function myFunction2() {
+            points.sort(function (a, b) {
+                return a - b;
+            });
+            document.getElementById("demo").innerHTML = points
+
+        }
+
+        //console.log(Math.max.apply(null,points));
+        //console.log(Math.min.apply(null,points));
+        let txt = "";
+        points.forEach(function(value, index,arr) {
+            console.log(value, " - ", index,"-",arr);
+            txt += value + "<br>";
+        });
+        document.getElementById("demo").innerHTML = txt;
+        //console.log(txt);
+
+        points.map(function(value,index,arr){
+            console.log(value,"-",index,"-", arr);
+        })
+
+
+
+    </script>
 </body>
+
 </html>

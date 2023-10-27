@@ -254,7 +254,7 @@
             /* setInterval(function(){
                 //console.log("Hassam1");
             },1000); */
-
+/* 
             const animals = ["Donkey","Cat","Dog","Cow","Camal"];
             console.log("Property: ",animals.length); // property
 
@@ -268,9 +268,51 @@
             console.log("array_new:", animals," length:",length);
             console.log("shift:", animals.shift());
             length = animals.length; 
-            console.log("array_new:", animals," length:",length);
+            console.log("array_new:", animals," length:",length); */
+
+            //const myBoys = ["Ali","Bilal","Hassam"];
+            //const myGirls = ["Waseema","Seema","Naseema"];
+            //const myChilderns = myBoys.concat(myGirls);
+            //const myChilderns = myGirls.concat(myBoys);
+            //const myChilderns = myGirls.concat("Rani","Fatima");
+            //console.log(myChilderns);
+
+            /* const arr = [["A","B"],["D","R"],["E","G"]];
+            const flat_arr = arr.flat();
+            //console.log("Flat:",arr.flat());
+            for(let a = 0; a < flat_arr.length; a++){
+                console.log("Flat:",flat_arr[a]);
+            }
 
 
+            for(let i = 0; i < arr.length; i++)
+            {
+                for(let j = 0; j < arr[i].length; j++)
+                {
+                    console.log("My:",arr[i][j]);
+                }
+            } */
+
+            const fruits1 = ["Banana","Orange","Apple","Mango"];
+            //fruits1.splice(2,0,"Lemon","Kiwi");
+            //fruits1.splice(0,1);
+            
+            //const newvalue = fruits1.slice(1);
+            //console.log(newvalue);
+            //console.log(fruits1);
+            
+            fruits1.sort();
+            //console.log(fruits1);
+            fruits1.reverse();
+            //console.log(fruits1);
+
+            const point = [110,30,40,10,100,50];
+            console.log(point.sort(function(a, b){
+                return a - b;
+            })); 
+            console.log(point.sort(function(a, b){
+                return b - a;
+            })); 
 
 
     </script>
