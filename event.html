@@ -40,16 +40,42 @@
         //console.log(Math.min.apply(null,points));
         let txt = "";
         points.forEach(function(value, index,arr) {
-            console.log(value, " - ", index,"-",arr);
+            //console.log(value, " - ", index,"-",arr);
             txt += value + "<br>";
         });
         document.getElementById("demo").innerHTML = txt;
         //console.log(txt);
 
         points.map(function(value,index,arr){
-            console.log(value,"-",index,"-", arr);
+           // console.log(value,"-",index,"-", arr);
         })
 
+       //const newarr = points.flatMap((x) => x * 2);
+        //console.log(newarr);
+
+        points.filter(function(value){
+                //if(value >= 50) console.log(value);
+        });
+
+        points.reduce(function(total, value, index, arr){
+            console.log(total ,"+",value);
+                let sum = total + value;
+                //console.log(sum);
+        });
+
+        const arrayCheck = points.every(function(value){
+            return value > 20; //all check true must
+        });
+        //console.log(arrayCheck);
+
+
+        const somearrCheck = points.some(function(value){
+            return value > 900;
+        });
+        //console.log(somearrCheck);
+
+       let position = points.indexOf(40) + 1;
+       console.log(position);
 
 
     </script>
